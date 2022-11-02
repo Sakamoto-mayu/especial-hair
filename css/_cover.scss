@@ -1,0 +1,88 @@
+#cover{
+    position: relative;
+    background-color: $beige;
+    margin-bottom: 10rem;
+}
+
+.slideshow{
+padding: 6rem 0 0 3rem;
+}
+
+.slick-slider{
+margin: 0;
+padding: 0;
+}
+.slick-slider img {
+width: 100%;
+height: 100%;
+}
+
+
+
+/* coverの背景 */
+
+.wave-cover {
+position: absolute;
+height: 87px;
+width: 100%;
+background: $beige;
+    bottom: -6rem;
+  z-index: -1;
+}
+
+.wave-cover::before, .wave-cover::after {
+content: "";
+display: block;
+position: absolute;
+border-radius: 100% 50%;
+}
+
+.wave-cover::before {
+width: 55%;
+height: 109%;
+background-color: #fff;
+right: 0%;
+top: 60%;
+}
+.wave-cover::after {
+width: 55%;
+height: 100%;
+background-color: $beige;
+left: -3%;
+top: 40%;
+}
+.catch {
+  @media (max-width: 768px)  { 
+    display: none;
+  }
+}
+
+
+//PC用CSS
+.slideshow{
+  @media (min-width: 769px)  { 
+  padding: 2rem 0 0 15rem;
+  }
+}
+.catch {
+  @media (min-width: 769px)  { 
+  font-family: 'Pinyon Script', cursive;
+  position: absolute;
+  z-index: 2;
+  color: black;
+  align-items: center;
+  top: 60%;
+  left: 5%;
+  right: 0;
+  bottom: 0;
+  transform: translate(0, -50%);
+  width: 43%;
+  mix-blend-mode: multiply;
+  filter: drop-shadow(5px 5px 5px #aaa);
+  }
+}
+.catch img{
+@media (min-width: 769px)  { 
+  width: 100%;
+}
+}

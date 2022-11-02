@@ -1,0 +1,61 @@
+$white: #fff;
+$black: #333;
+$gray: #efefef;
+$beige: #faf8ed;
+$brown: #88755b;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul {list-style: none;}
+
+// ベーススタイル
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: “Hiragino Mincho ProN W3”, “ヒラギノ明朝 ProN W3”, “Hiragino Mincho ProN”, 'Noto Serif SC', serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.75;
+    color: $black;
+    background-color: $white;
+    @media (min-width: 769px) {
+        font-size: 1.3rem;
+        line-height: 2;
+    }
+}
+
+a {
+    color: $black;
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+h2{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.scroll_up {
+  transition: 0.8s ease-in-out;
+  transform: translateY(30px);
+  opacity: 0;
+}
+.scroll_up.on {
+  transform: translateY(0);
+  opacity: 1.0;
+}

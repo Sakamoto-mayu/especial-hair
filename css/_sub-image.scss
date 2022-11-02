@@ -1,0 +1,9 @@
+#sub-image{
+    display:flex;
+}
+
+.sub-image-item:nth-child(4){
+    @media (max-width: 768px) {
+        display: none;
+    }
+}

@@ -1,0 +1,67 @@
+#price{
+    padding: 0 1.5rem;
+    margin: 15rem auto 10rem;
+    max-width: 500px;
+}
+#price > h2{
+    padding-bottom: 5rem;
+}
+.sub-menu-item{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-title{
+    color: $brown;
+    border-bottom: 1px $brown solid;
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, 游ゴシック体, "Noto Sans JP", "ヒラギノ角ゴ Pro W3", メイリオ, sans-serif;
+    font-size: 1.7rem;
+}
+.sub-menu{
+    padding: 2rem 1rem 0;
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, 游ゴシック体, "Noto Sans JP", "ヒラギノ角ゴ Pro W3", メイリオ, sans-serif;
+    font-size: 1.5rem;
+}
+.menu-coment{
+        text-align: right;
+}
+.menu-item{
+    padding: 0 0 3rem;
+}
+
+
+
+
+
+
+
+
+//PC用CSS
+#price{
+     @media (min-width: 769px)  {
+         padding: 0 14rem;
+         max-width: 1100px;
+         margin: 20rem auto 15rem;
+     }
+}
+.menu-container{
+    @media (min-width: 769px)  {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 0 1rem;
+    }
+}
+.menu-item{
+    @media (min-width: 769px)  {
+            width: 45%;
+    }
+}
+.menu-title{
+    @media (min-width: 769px)  {
+        font-size: 2rem;
+    }
+}
+.sub-menu{
+    @media (min-width: 769px)  {
+            font-size: 1.7rem;
+    }
+}

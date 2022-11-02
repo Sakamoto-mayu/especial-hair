@@ -1,0 +1,139 @@
+#about{
+    position: relative;
+    background-color: $beige;
+    margin-bottom: 10rem;
+}
+.about-item{
+    width: 80%;
+    max-width: 500px;
+}
+.about-item:nth-child(2){
+    margin: 0 0 0 auto;
+}
+.about-top-title{
+    text-align: center;
+    padding: 1rem;
+}
+.about-top-p{
+    padding: 0 2rem 2rem;
+}
+.about-container{
+        padding: 0 1.5rem;
+}
+.about-image{
+    height: 20rem;
+}
+.about-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-top-image-pc{
+    @media (max-width: 768px)  {
+        display: none;
+    }
+}
+.abbout-title{
+    padding: 1rem 1rem 1rem 0;
+}
+.about-p{
+    padding-bottom: 4rem;
+}
+
+.wave-about {
+  position: absolute;
+  height: 87px;
+  width: 100%;
+  background: $beige;
+      bottom: -6rem;
+    z-index: -1;
+}
+
+.wave-about::before, .wave-about::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+}
+
+.wave-about::before {
+  width: 55%;
+  height: 109%;
+  background-color: #fff;
+  right: 0%;
+  top: 60%;
+}
+.wave-about::after {
+  width: 55%;
+  height: 100%;
+  background-color: $beige;
+  left: -3%;
+  top: 40%;
+}
+
+
+
+
+
+
+
+//PC用CSS
+
+.about-top-text{
+     @media (min-width: 769px)  {
+        background-color: rgba(255,255,255,0.9);
+    width: 40%;
+    position: absolute;
+    right: 0;
+    top: 18rem;
+     }
+}
+.about-top-title{
+    @media (min-width: 769px)  {
+    padding: 3rem 4rem 1.2rem;
+    }
+}
+.about-top-p{
+    @media (min-width: 769px)  {
+    padding: 0 4rem 3rem;
+    }
+}
+
+.about-top-image-pc{
+    @media (min-width: 769px)  {
+    margin-bottom: 14rem;
+    width: 75%;
+    height: 50rem;
+    }
+}
+.about-top-image-pc img{
+    @media (min-width: 769px)  {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    }
+}
+.about-top-image{
+    @media (min-width: 769px)  {
+        display: none;
+    }
+}
+.about-container{
+    @media (min-width: 769px)  {
+    display: flex;
+    padding: 0 6rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    }
+}
+.about-item{
+    @media (min-width: 769px)  {
+    padding-right: 4rem;
+    }
+}
+.about-item:nth-child(3){
+    @media (min-width: 769px)  {
+        padding: initial;
+    }
+}
